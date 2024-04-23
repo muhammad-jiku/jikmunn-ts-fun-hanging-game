@@ -64,7 +64,9 @@ function App() {
 
   return (
     <div className='App'>
-      <div style={{ fontSize: '2rem', textAlign: 'center' }}>
+      <div
+        style={{ fontSize: '2rem', textAlign: 'center', fontWeight: 'bolder' }}
+      >
         {isWinner && 'Winner! - Refresh to try again'}
         {isLoser && 'Nice Try - Refresh to try again'}
       </div>

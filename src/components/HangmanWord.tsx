@@ -18,18 +18,21 @@ export default function HangmanWord({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         fontFamily: 'monospace',
+        padding: '15px 10px',
+        boxSizing: 'border-box',
       }}
     >
       {wordToGuess.split('').map((letter, index) => (
         <span style={{ borderBottom: '.1em solid black' }} key={index}>
           <span
             style={{
+              fontSize: '0.625em',
               visibility:
                 guessedLetters.includes(letter) || reveal
                   ? 'visible'
                   : 'hidden',
               color:
-                !guessedLetters.includes(letter) && reveal ? 'red' : 'black',
+                !guessedLetters.includes(letter) && reveal ? 'red' : 'green',
             }}
           >
             {letter}
