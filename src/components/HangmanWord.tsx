@@ -4,7 +4,7 @@ type HangmanWordProps = {
   reveal?: boolean;
 };
 
-export function HangmanWord({
+export default function HangmanWord({
   guessedLetters,
   wordToGuess,
   reveal = false,
